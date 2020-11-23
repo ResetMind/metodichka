@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>1. ТЕОРИЯ ТРАНСЛЯЦИИ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style13.css">
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="container">
+				<p class="code">
+					 procedure значение;<br> 
+					 begin<br>
+					 BP:=false;<br>
+					 if t = ид или t = конст then<br>
+					 begin<br>
+					 BP:=true;<br>
+					 Перейти к следующей лексеме;<br>
+					 end {if ид или конст}<br>
+					 else<br>
+					 if t = ( then begin<br>
+					 Перейти к следующей лексеме;<br>
+					 if <арифметическое выражение> завершилось успешно then<br>
+					 if t = ) then<br>
+					 begin<br>
+					 BP:=true;<br>
+					 Перейти к следующей лексеме;<br>
+					 end; {if )}<br>
+					 end; {if (}<br>
+					 if BP = true then успешное завершение<br>
+					 else неудачное завершение;<br>
+					 end; 
+				</p>
+				<p class="paragraph">Графически разбор этого предложения методом рекурсивного спуска выглядит так:</p>
+				<p class="paragraph">1. Вызывается процедура <присваивание>, которая обнаружила лексемы ид и := во входном потоке (рис. 5, а).</p>
+				<p class="paragraph" >2. Процедура < присваивание > вызывает процедуру <арифметическое выражение> (рис. 5, б)</p>
+				<p class="paragraph" >3. Процедура <арифметическое выражение> вызывает процедуру <слагаемое> (рис. 6, а).</p>
+				<p class="paragraph" >4. Процедура <слагаемое>. вызывает процедуру <значение>, которая обнаруживает лексему ид.
+				Управление возвращается в процедуру <слагаемое> (рис. 6, б).</p>
+				<p class="paragraph" >5. Процедура <слагаемое> обнаруживает лексему div и вызывает процедуру <значение>, которая
+				обнаруживает лексему конст. и передает управление в процедуру  <арифметическое выражение> (рис. 7, a).</p>
+				<img id="image1" src="image/image1_page_13.jpg">
+			</div>
+			<button id="next" onclick="location.href='Page_14.html'">Далее</button>
+			<button id="back" onclick="location.href='Page_12.html'">Назад</button>
+		</div>	
+    </body>
+</html>

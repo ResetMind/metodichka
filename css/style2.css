@@ -1,0 +1,83 @@
+
+#paragraph_1
+{
+	text-align: left;
+}
+
+#paragraph_2
+{
+	text-align: center;
+	margin-top: 35px;
+	font-size: 9px;
+}
+
+#author_paragraph_2
+{
+	text-align: center;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+#paragraph_3
+{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 9px;
+}
+
+#author_paragraph_3
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+#author_paragraph_4
+{
+	text-align: left;
+	text-indent: 35px;
+	margin-top: 75px;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+#paragraph_4
+{
+	text-align: justify;
+	font-size: 10px;
+}
+
+#paragraph_5
+{
+	text-align: justify;
+	text-indent: 20px;
+	margin-top: 25px;
+	font-size: 7px;
+}
+
+#paragraph_6
+{
+	text-align: justify;
+	text-indent: 20px;
+	font-size: 7px;
+}
+
+#paragraph_7
+{
+	text-align: center;
+	margin-top: 12px;
+	font-size: 9px;
+}
+
+#paragraph_8
+{
+	text-align: left;
+	margin-top: 30px;
+	font-size: 9px;
+}
+
+#paragraph_9
+{
+	text-align: center;
+	margin-top: -20px;
+	font-size: 8px;
+}

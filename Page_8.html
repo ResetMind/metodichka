@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>1. ТЕОРИЯ ТРАНСЛЯЦИИ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style8.css">
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="container">
+				 <table>
+				   <tr><td></td><td>12</td><td></td></tr>
+				   <tr><td>11</td><td>8</td><td></td></tr>
+				   <tr><td></td><td>20</td><td></td></tr>
+				   <tr><td></td><td>22</td><td>4</td></tr>
+				   <tr><td></td><td>14</td><td></td></tr>
+				   <tr><td></td><td>22</td><td>2</td></tr>
+				   <tr><td></td><td>21</td><td></td></tr>
+				   <tr><td>12</td><td>4</td><td></td></tr>
+				   <tr><td></td><td>11</td><td></td></tr>
+				 </table>
+				 <p class="header">
+					1.2. СИНТАКСИЧЕСКИЙ АНАЛИЗ
+				 </p>
+				 <p class="paragraph">
+					Синтаксический анализ – второй этап компиляции. Во время этого этапа предложения программы
+					распознаются как языковые конструкции используемой грамматики. Для того чтобы выяснить, принадлежит ли предложение языку, необходимо построить алгоритм, который для любого предложения, допустимого грамматикой, давал бы последовательность выводов этой цепочки к начальному символу
+					грамматики. Мы можем рассматривать этот процесс как построение дерева грамматического разбора
+					для транслируемых предложений. Различают две категории алгоритмов разбора: нисходящий (сверху
+					вниз) и восходящий (снизу вверх). Эти термины соответствуют способу построения синтаксических деревьев. Рассмотрим для примера предложение 35 в грамматике целых чисел: 
+				 </p>
+				 <p class="expressions">
+					N&rarr;В/NВ; В&rarr;0/1/2/3/4/5/6/7/8/9. 
+				 </p>
+				 <p class="paragraph">
+					При нисходящем разборе дерево строится от корня (начального символа) вниз к концевым узлам
+					(рис. 2)
+				 </p>
+				 <!--<img id="image1" src="image/image1_page_8.jpg">-->
+				 <p class="expressions">N&rarr;NB&rarr;N5&rarr;B5&rarr;35</p>
+				 <p class="expressions">
+					N<br>
+					<span style = "transform: rotate(45deg);">&darr;</span><span style = "transform: rotate(-45deg);">&darr;</span><br>
+					N&ensp;B<br>
+					&darr;&ensp;&darr;<br>
+					B&ensp;5<br>
+					&darr;&ensp;&ensp;<br>
+					3&ensp;&ensp;
+				 
+				 </p>
+				 <p class='picture_number'>Рис.2</p>
+				 <p class="paragraph">
+					Восходящий разбор состоит в том, что, отправляясь от заданной цепочки, пытаются привести ее к
+					начальному символу (рис. 3). 
+				 </p>
+				 <!--<img id="image2" src="image/image2_page_8.jpg">-->
+				 <p class="expressions">35&rarr;B5&rarr;N5&rarr;NB&rarr;N</p>
+				 <p class="expressions">
+					N<br>
+					<span style = "transform: rotate(45deg);">&uarr;</span><span style = "transform: rotate(-45deg);">&uarr;</span><br>
+					N&ensp;B<br>
+					&uarr;&ensp;&uarr;<br>
+					B&ensp;5<br>
+					&uarr;&ensp;&ensp;<br>
+					3&ensp;&ensp;
+				 
+				 </p>
+				 <p class='picture_number'>Рис.3</p>
+				 <p class="paragraph">
+					Разработано множество методов синтаксического анализа. В лабораторных работах рассматриваются два метода: нисходящий и восходящий. 
+				 </p>
+			</div>
+			<button id="next" onclick="location.href='Page_9.html'">Далее</button>
+			<button id="back" onclick="location.href='Page_7.html'">Назад</button>
+		</div>	
+    </body>
+</html>

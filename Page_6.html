@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>1. ТЕОРИЯ ТРАНСЛЯЦИИ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style6.css">
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="container">
+				  <table id="table_1">
+				  <caption >Таблица 1</caption>
+				   <tr>
+					<th>Лексема</th>
+					<th>Код</th>
+				   </tr>
+				   <tr><td>program</td><td>1</td></tr>
+				   <tr><td>var</td><td>2</td></tr>
+				   <tr><td>begin</td><td>3</td></tr>
+				   <tr><td>end</td><td>4</td></tr>
+				   <tr><td>integer</td><td>5</td></tr>
+				   <tr><td>for</td><td>6</td></tr>
+				   <tr><td>read</td><td>7</td></tr>
+				   <tr><td>write</td><td>8</td></tr>
+				   <tr><td>to</td><td>9</td></tr>
+				   <tr><td>do</td><td>10</td></tr>
+				   <tr><td>.</td><td>11</td></tr>
+				   <tr><td>;</td><td>12</td></tr>
+				   <tr><td>:</td><td>13</td></tr>
+				   <tr><td>,</td><td>14</td></tr>
+				   <tr><td>:=</td><td>15</td></tr>
+				   <tr><td>+</td><td>16</td></tr>
+				   <tr><td>-</td><td>17</td></tr>
+				   <tr><td>*</td><td>18</td></tr>
+				   <tr><td>div</td><td>19</td></tr>
+				   <tr><td>(</td><td>20</td></tr>
+				   <tr><td>)</td><td>21</td></tr>
+				   <tr><td>ид</td><td>22</td></tr>
+				   <tr><td>конст</td><td>23</td></tr>
+				 </table>
+				 <p class="paragraph">
+					Таким образом, результат обработки лексическим анализатором обрабатываемой программы можно
+					представить последовательностью лексем (табл. 2). Здесь в качестве дополнительных данных для констант используется значение самой константы, а для идентификатора – его номер в таблице символов. 
+				 </p>
+				 <table id="table_2">
+				  <caption >Таблица 2</caption>
+				   <tr>
+					<th>Строка</th>
+					<th>Код лексемы</th>
+					<th>Дополнительные данные</th>
+				   </tr>
+				   <tr><td>1</td><td>1</td><td></td></tr>
+				   <tr><td></td><td>22</td><td>1</td></tr>
+				   <tr><td></td><td>12</td><td></td></tr>
+				   <tr><td>2</td><td>2</td><td></td></tr>
+				   <tr><td></td><td>22</td><td>2</td></tr>
+				   <tr><td></td><td>14</td><td></td></tr>
+				   <tr><td></td><td>22</td><td>3</td></tr>
+				   <tr><td></td><td>14</td><td></td></tr>
+				   <tr><td></td><td>22</td><td>4</td></tr>
+				 </table>
+			</div>
+			<button id="next" onclick="location.href='Page_7.html'">Далее</button>
+			<button id="back" onclick="location.href='Page_5.html'">Назад</button>
+		</div>	
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>1. ТЕОРИЯ ТРАНСЛЯЦИИ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style12.css">
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="container">
+				<p class="code">
+					BP := true;<br>
+					 end; {if :=}<br>
+					 end; {if ид.}<br>
+					 if BP = true then успешное завершение<br>
+					 else неудачное завершение;<br>
+					 end;<br>
+				</p>
+				<p class="paragraph">
+					Процедура присваивание в процессе работы вызывает процедуру <арифметическое выражение>: 
+				</p>
+				<p class="code">
+					procedure <арифметическое выражение>;<br>
+					 begin<br>
+					 BP:=false;<br>
+					 if <слагаемое> завершилось успешно then<br>
+					 begin<br>
+					 BP:=true;<br>
+					 while (t = + или t = – ) and ( BP=true ) do<br>
+					 begin<br>
+					 Перейти к следующей лексеме;<br>
+					 if <слагаемое> завершилось неудачно<br>
+					then<br>
+					 BP:=false;<br>
+					 end; {while}<br>
+					 end; {if слагаемое}<br>
+					 if BP = true then успешное завершение<br>
+					 else неудачное завершение;<br>
+					end; 
+				</p>
+				<p class="paragraph">
+					Процедура <арифметическое выражение>, в соответствии с грамматикой, вызывает процедуру
+					<слагаемое>: 
+				</p>
+				<p class="code">
+					procedure <слагаемое> ;<br>
+					 begin<br>
+					 BP:=false;<br>
+					 if <значение> завершилось успешно then<br>
+					 begin<br>
+					 BP:=true;<br>
+					 while (t = * или t = div ) and ( BP=true ) do<br>
+					 begin<br>
+					 Перейти к следующей лексеме;<br>
+					 if <значение> завершилось неудачно<br>
+					then<br>
+					 BP:=false;<br>
+					 end; {while}<br>
+					 end; {if значение}<br>
+					 if BP=true then успешное завершение<br>
+					 else неудачное завершение;<br>
+					 end; 
+				</p>
+				<p class="paragraph">
+					И наконец, процедура <слагаемое> вызывает процедуру <значение>, которая распознает переменные, константы или вызывает процедуру <арифметическое выражение>. Алгоритм процедуры <значение> имеет вид: 
+				</p>
+			</div>
+			<button id="next" onclick="location.href='Page_13.html'">Далее</button>
+			<button id="back" onclick="location.href='Page_11.html'">Назад</button>
+		</div>	
+    </body>
+</html>

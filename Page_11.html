@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>1. ТЕОРИЯ ТРАНСЛЯЦИИ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style11.css">
+    </head>
+    <body>
+		<div id="wrapper">
+			<div id="container">
+				<p class="code">
+					 BP := true;<br>
+					 перейти к следующей лексеме;<br>
+					 while ( t = , ) and ( BP = true ) do<br>
+					 begin<br>
+					 перейти к следующей лексеме;<br>
+					 if t = ид then перейти к следующей<br>
+					 лексеме<br>
+					 else BP := false;<br>
+					 end; {while}<br>
+					 if BP = true then успешное завершение<br>
+					 else неудачное завершение;<br>
+					 end;<br>
+				</p>
+				<p class="paragraph">
+					На рис. 4 графически представлен процесс грамматического разбора методом рекурсивного спуска
+					для предложения read. На фрагменте а) изображен вызов процедуры <ввод>, которая обнаружила лексемы read и ) во входном потоке (штриховая линия). На фрагменте б) процедура <ввод> вызывает процедуру <список переменных> (сплошная линия), которая обработала лексему ид. На фрагменте в) процедура <список переменных> закончила работу, передала управление процедуре <ввод> с признаком
+					успешного завершения; процедура <ввод> обработала входную лексему ). На этом анализ входного
+					предложения завершен. 
+				</p>
+				<img id="image1" src="image/image1_page_11.jpg">
+				<!--<div><div style="border: 1px solid black; width: 60px; height: 20px; text-align: center;">Ввод</div>&ensp;<span style = "transform: rotate(45deg);">&brvbar;</span>&ensp;&ensp;&ensp;&brvbar;<br>read&ensp;)</div>-->
+				<p class="paragraph">
+					Приведем еще один пример. Имеем предложение из исходной программы:
+				</p>
+				<p class="code" >REZ := SUM DIV 100 – A * A</p> 
+				<p class="paragraph">
+					Представим алгоритмы разбора этого предложения методом рекурсивного спуска:
+				</p>
+				<p class="code">
+					 procedure <присваивание><br>
+					 begin<br>
+					 BP := false;<br>
+					 if t = ид then<br>
+					 begin<br>
+					 перейти к следующей лексеме;<br>
+					 if t = := then<br>
+					 begin<br>
+					 перейти к следующей лексеме;<br>
+					 if <арифметическое выражение><br>
+					 завершилось успешно then <br>
+				</p>
+			</div>
+			<button id="next" onclick="location.href='Page_12.html'">Далее</button>
+			<button id="back" onclick="location.href='Page_10.html'">Назад</button>
+		</div>	
+    </body>
+</html>

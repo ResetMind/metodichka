@@ -1,10 +1,5 @@
 /*Анимация*/
 
-#container > *{
-	animation-name: page-animation;
-	animation-duration: 3s;
-}
-
 @keyframes page-animation{
 	0%{
 		opacity: 0;
@@ -13,9 +8,6 @@
 		opacity: 1;
 	}
 }
-
-
-
 /*CSS свойства всех страниц*/
 body
 {
@@ -27,7 +19,8 @@ body
 
 .wrapper
 {
-	margin: 0 auto;
+	margin: auto;
+	margin-top: 5px;
 	width: 496px;
 	height: 702px;
 	box-sizing: border-box;
@@ -37,18 +30,13 @@ body
 
 .container {
 	margin: 22px 22px;
-	display: none;
-}
-
-.wrapper {
-	margin-top: 5px;
 }
 
 /*содержание*/
 
 .hidden_menu {
 	display: block;
-	position: absolute;
+	position: fixed;
 	overflow: auto;
 	width: 300px;
 	background-color: rgb(21, 34, 64);
@@ -153,10 +141,10 @@ hr
 	background: black;
 }
 
-li
+.container li
 {
 	text-align: justify;
-	/*text-indent: 20px;*/
+	text-indent: 20px;
 	padding: 0px 0px;
 	margin: 0;
 	font-size: 10px;
@@ -164,7 +152,6 @@ li
 
 code
 {
-	text-align: left;
 	font-size: 7px;
 	line-height: 2px;
 	padding: 0px 0px;
@@ -181,23 +168,21 @@ caption
 table
 {
 	color: black;
-	width: 452px;
+	width: 100%;
 	border-spacing: 0px;
 	border-collapse: collapse;
-	font-size: 12px;
-	margin: auto;
+	font-size: 10px;
 }
 
-th
+th, td
 {
 	text-align: center;
 	border: 1px solid black;
+	padding: 2px 5px;
 }
 
-td
-{
-	text-align: center;
-	border: 1px solid black;
+table.start td {
+	text-align: start;
 }
 
 img
@@ -220,10 +205,10 @@ img
 	
 .code
 {
-	margin: 5px;
+	margin: 10px 0;
+	line-height: 1.3;
 	text-align: left;
 	width: 412;
-	padding: 0px 20px;
 }
 
 .picture_number
@@ -231,6 +216,7 @@ img
 	text-align: center;
 	font-weight: bold;
 	margin: 2px;
+	font-size: 9px;
 }
 
 span
@@ -238,14 +224,88 @@ span
 	display: inline-block;
 }
 
+.vert_span {
+	transform: rotate(-90deg);
+	display: flex;
+	flex: auto;
+	align-content: center;
+	align-items: center;
+}
+
+.vert_span_div {
+	display: flex;
+	flex-direction: column;
+	width: 15px;
+}
+
+.two_tables {
+	display:flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+.two_tables div:not(:nth-of-type(1)) {
+	margin-left: 10px;
+}
+
+.decimal {
+	list-style: decimal;
+}
+
+h1 {
+	margin: 10px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	margin: 10px;
+	text-align: center;
+	font-size: 11px;
+}
+
+h3 {
+	margin: 10px;
+	text-align: center;
+	font-size: 10px;
+}
+
 .center {
 	text-align: center;
+}
+
+.left {
+	text-align: left;
 }
 
 .bold {
 	font-weight: bold;
 }
 
+.italic {
+	font-style: italic;
+}
+
+.font_7 {
+	font-size: 7px;
+}
+
+.font_8 {
+	font-size: 8px;
+}
+
+.font_9 {
+	font-size: 9px;
+}
+
+.font_10 {
+	font-size: 10px;
+}
+
+.justify {
+	text-align: justify;
+}
 
 .logo
 {

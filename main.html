@@ -3457,57 +3457,136 @@
                 КОНТРОЛЬНЫЕ ВОПРОСЫ И ЗАДАНИЯ
             </h1>
             <hr>
-            <li class="decimal">Какова роль лексического анализатора?</li>
-            <li class="decimal">Что такое лексемы?</li>
-            <li class="decimal">Для чего нужна кодировочная таблица?</li>
-            <li class="decimal">Для чего служит таблица символов?</li>
-            <li class="decimal">Как организуется таблица символов?</li>
-            <li class="decimal">В чем состоит метод бинарного поиска?</li>
-            <li class="decimal">Что такое хеширование?</li>
-            <li class="decimal">Как работает метод цепочек?</li>
-            <li class="decimal">Какие известны способы рехеширования?</li>
-            <li class="decimal">Чем отличаются способы нисходящего и восходящего грамматического разбора?</li>
-            <li class="decimal">Какие известны методы синтаксического анализа?</li>
-            <li class="decimal">В чем сущность метода рекурсивного спуска?</li>
-            <li class="decimal">Для чего применяется измененный способ записи БНФ?</li>
-            <li class="decimal">В каком виде представляется программа на выходе синтаксического анализатора?</li>
-            <li class="decimal">В чем сущность метода операторного предшествования?</li>
-            <li class="decimal">Как сравниваются известные способы организации таблиц символов?</li>
-            <li class="decimal">В чем суть методов бинарного поиска и упорядоченных вставок?</li>
-            <li class="decimal">Каковы достоинства хеш-адресации, и каковы ее недостатки?</li>
-            <li class="decimal">Какие известны способы рехеширования?</li>
-            <li class="decimal">В чем преимущество метода цепочек по сравнению с рехешированием?</li>
-            <li class="decimal">Какая информация хранится в таблице символов?</li>
-            <li class="decimal">Как записать информацию о переменных?</li>
-            <li class="decimal">Разработать грамматику языка и алгоритмы отдельных этапов трансляции для фрагментов
-                программ, приведенным в табл. 8.</li>
-            <table class="start" align="center" style="width:auto;">
+            <ol>
+                <li>Какова роль лексического анализатора?</li>
+                <li>Что такое лексемы?</li>
+                <li>Для чего нужна кодировочная таблица?</li>
+                <li>Для чего служит таблица символов?</li>
+                <li>Как организуется таблица символов?</li>
+                <li>В чем состоит метод бинарного поиска?</li>
+                <li>Что такое хеширование?</li>
+                <li>Как работает метод цепочек?</li>
+                <li>Какие известны способы рехеширования?</li>
+                <li>Чем отличаются способы нисходящего и восходящего грамматического разбора?</li>
+                <li>Какие известны методы синтаксического анализа?</li>
+                <li>В чем сущность метода рекурсивного спуска?</li>
+                <li>Для чего применяется измененный способ записи БНФ?</li>
+                <li>В каком виде представляется программа на выходе синтаксического анализатора?</li>
+                <li>В чем сущность метода операторного предшествования?</li>
+                <li>Как сравниваются известные способы организации таблиц символов?</li>
+                <li>В чем суть методов бинарного поиска и упорядоченных вставок?</li>
+                <li>Каковы достоинства хеш-адресации, и каковы ее недостатки?</li>
+                <li>Какие известны способы рехеширования?</li>
+                <li>В чем преимущество метода цепочек по сравнению с рехешированием?</li>
+                <li>Какая информация хранится в таблице символов?</li>
+                <li>Как записать информацию о переменных?</li>
+                <li>Разработать грамматику языка и алгоритмы отдельных этапов трансляции для фрагментов
+                    программ, приведенным в табл. 8.</li>
+            </ol>
+            <table class="start noborder" align="center" style="width: auto;">
                 <caption>Таблица 8</caption>
                 <tr>
-                    <td>1. ACCEPT *; A<br>
-                        if (A.LE.0) S=S+A<br>
-                        S=A*100–K</td>
-                    <td></td>
+                    <td width="150px">
+                        <div><span>1.&nbsp;</span>
+                            ACCEPT *; A<br>
+                            if (A.LE.0) S=S+A<br>
+                            S=A*100–K
+                        </div>
+                    </td>
+                    <td width="150px">
+                        <div><span>2.&nbsp;</span>
+                            МАХ=0<br>
+                            if (X.GT.MAX) MAX=X<br>
+                            TYPE *, MAX
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <div><span>3.&nbsp;</span>
+                            D=B*B=–4*A*C<br>
+                            if (D.EQ.O) T=–B/(2*A)<br>
+                            TYPE*, T
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>4.&nbsp;</span>
+                            S1:=A MOD B;<br>
+                            S2:=A–((A DIV B)*B);<br>
+                            if S1=S2 then write ('ВСЕ')
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <div><span>5.&nbsp;</span>
+                            if x&gt;0 then y:=l<br>
+                            else if x&lt;0 then y:=2<br>
+                            else y:=0
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>6.&nbsp;</span>
+                            if Y&gt;MIN &amp; Y&lt;MAX then<br>
+                            PUT LIST (Y);<br>
+                            else X=X+1;
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <div><span>7.&nbsp;</span>
+                            Z=Z+1;<br>
+                            if Z>N then DO;<br>
+                            Z=Z/N;<br>
+                            PUT DATA (Z);<br>
+                            end;
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>8.&nbsp;</span>
+                            X=X0+(i–l)*H<br>
+                            if (X.LT.O) Y=X*X<br>
+                            if (X.GT.O) Y=2*X
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <div><span>9.&nbsp;</span>
+                            if i MOD 2=0 THEN Z:=Z*X;<br>
+                            i:=i DIY 2;<br>
+                            X:=X*X*X
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>10.&nbsp;</span>
+                            READ(B);<br>
+                            if B>L THEN begin<br>
+                            A:=A–Z;<br>
+                            A:=A+B end<br>
+                            else B:=L+B
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <div><span>11.&nbsp;</span>
+                            if (X+Y)&lt;&gt;0 THEN<br>
+                            A:=(X*X+Z*Z)/(1 +1/(X–Y*Z))<br>
+                            else A:=0;<br>
+                            writeln (A)
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>12.&nbsp;</span>
+                            A:=-3*C;<br>
+                            B:=Y*Y*X;<br>
+                            if (A&lt;0) AND (B&gt;0) THEN<br>
+                            C:=–A+B<br>
+                            else C:=A+B
+                        </div>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -3515,104 +3594,1036 @@
     <!--p33-->
     <div class="wrapper">
         <div class="container">
+            <table class="start noborder" align="center" style="width: auto;">
+                <tr>
+                    <td width="150px">
+                        <div><span>13.&nbsp;</span>
+                            if T>EPS THEN begin<br>
+                            K:=K+2;<br>
+                            T:=–T*SX/(K*(K–1));<br>
+                            S:=S+T<br>
+                            end
+                        </div>
+                    </td>
+                    <td width="150px">
+                        <div><span>14.&nbsp;</span>
+                            if N>0 THEN<br>
+                            M:=–M+l/N;<br>
+                            B:=M*N+3;<br>
+                            if B=0 THEN write (N)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><span>15.&nbsp;</span>
+                            if (2.5+0.68&lt;=2.8) OR Y<br>
+                            AND X OR Z AND NOT Y<br>
+                            THEN<br>
+                            writeln ('верно')
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>16.&nbsp;</span>
+                            READ(N);<br>
+                            M:=0;<br>
+                            If f=1 THEN writeln (M)<br>
+                            else M:=M+1/N
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><span>17.&nbsp;</span>
+                            RESET (F,’F.DAT’);<br>
+                            SUM:=SUM+F^;<br>
+                            GET (F)
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>18.&nbsp;</span>
+                            REWRITE (F, 'F.DAT');<br>
+                            F^:=K*K;<br>
+                            PUT (F)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><span>19.&nbsp;</span>
+                            READ (x, y);<br>
+                            A:=x/(y*y*x*x/(y+x/3))<br>
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>20.&nbsp;</span>
+                            READ (H, В, М);<br>
+                            PI:=3.14;<br>
+                            V:=PI*H*<br>
+                            *(B*B+M*M+B*M)/3
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><span>21.&nbsp;</span>
+                            A=Z*Z;<br>
+                            B=l+A/(3*Z+A/5);<br>
+                            if B>5 THEN writeln (B)
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>22.&nbsp;</span>
+                            if x&lt;0.5 THEN y=2*x*x–x<br>
+                            else y=x*x/(x–0.1);<br>
+                            write (y)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><span>23.&nbsp;</span>
+                            READ (A, B);<br>
+                            IF A&gt;B THEN<br>
+                            X=2*A+2/B+4;<br>
+                            IF A&lt;=B THEN<br>
+                            x=(A+B)*(A–B);<br>
+                            writeln (x)
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>24.&nbsp;</span>
+                            READ (I);<br>
+                            if (I&gt;4) OR (I&lt;0) THEN<br>
+                            writeln ('ошибка')
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><span>25.&nbsp;</span>
+                            if A&lt;0 THEN A=–A;<br>
+                            if B&lt;0 THEN B=–B;<br>
+                            SA:=(A+B)/2;<br>
+                            SB:=A*B/2
+                        </div>
+                    </td>
+                    <td>
+                        <div><span>26.&nbsp;</span>
+                            READLN (Y);<br>
+                            if Y&lt;0 THEN<br>
+                            Z:=Y–3*Y*Y/(Y+1)<br>
+                            else if Y=0 THEN Z:=0<br>
+                            else Z:=100*Y
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     <!--p34-->
     <div class="wrapper">
         <div class="container">
+            <h2>КУРСОВАЯ РАБОТА<br>
+                ПО ДИСЦИПЛИНЕ "ЛИНГВИСТИЧЕСКОЕ И<br>
+                ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ САПР"</h2>
+            <p class="paragraph" style="margin-bottom: 5px;"><i>Основная цель – закрепление навыков создания
+                    лингвистического обеспечения САПР, описание
+                    языка с помощью формальной грамматики, разработка алгоритма и реализация простых вариантов
+                    трансляторов, изучение различных методов синтаксического анализа.</i></p>
+            <p class="paragraph" style="margin-bottom: 5px;">
+                Общие требования к оформлению курсовых работ по дисциплине "Лингвистическое и программное обеспечение
+                САПР" для студентов 2 курса специальности 230104.
+            </p>
+            <p class="paragraph">
+                В отчете по курсовой работе необходимо отразить следующие разделы:
+            </p>
+            <ol>
+                <li>Пояснительная записка, включающая:</li>
+                <ol>
+                    <li>Задание на проектирование (в том числе дата принятия задания к исполнению, подпись студента).
+                    </li>
+                    <li>Содержание (название разделов, подразделов с указанием страниц; титульный лист не нумеруется, но
+                        считается).</li>
+                    <li>Введение (отразить общее назначение программы, указать дату разработки, кем разработана
+                        программа, ее название).</li>
+                    <li>Описание процесса решения задачи.</li>
+                    <li>Блок-схема основной программы и процедур.</li>
+                </ol>
+                <li>Распечатка программных модулей.</li>
+                <li>Описание программы, включающее:</li>
+                <ol>
+                    <li>Назначение и общее описание программы.</li>
+                    <li>Описание логической структуры программы.</li>
+                    <li>Способ обращения к программе (дать краткую характеристику операционной среды: как обратиться к
+                        программе, как получить загрузочный модуль, как запустить программу на выполнение).</li>
+                    <li>Перечень технических средств.</li>
+                </ol>
+                <li>Описание входных и выходных данных.</li>
+                <li>Текстовые примеры работы программы (контрольные примеры при верных исходных данных и
+                    ошибочных).</li>
+            </ol>
+            <h3>
+                Методические указания
+            </h3>
+            <p class="paragraph">
+                Взаимодействие между компонентами компилятора может осуществляться разными способами. На
+                рис. 20, <i>а</i> показано, что лексический анализатор (ЛА) считывает исходную программу (ИП) и
+                представляет ее в виде файла лексем. Синтаксический анализатор (СА) читает этот файл и выдает внутреннее
+                представление программы (ВП) программы. Наконец, этот файл считывается генератором кода (ГК),
+                который создает объектный код программы. Компилятор такого вида называется трехпроходным, так
+                как программа считывается трижды (исходная программа, лексемы, внутреннее представление).
+            </p>
+            <p class="paragraph">
+                На рис. 20, <i>б</i> изображена структура однопроходного компилятора. В этом случае синтаксический
+                анализатор выступает в роли управляющей программы, вызывая лексический анализатор и генератор
+                кода, организованные в виде процедур. Синтаксический анализатор постоянно обращается к лексическому
+                анализатору, получая от него лексему за лексемой из просматриваемой программы до тех пор,
+                пока не построит новый элемент внутреннего представления, после чего обращается к генератору кода,
+                который создает объектный код для этого фрагмента программы.
+            </p>
+            <p class="paragraph">
+                Каждый из этих способов организации компиляторов имеет свои преимущества. В трехпроходном
+                компиляторе достигается высокая гибкость за счет независимости каждой фазы трансляции. С другой
+                стороны, если требуется достичь высокой скорости транслирования, используют однопроходный компилятор, в
+                котором исходная программа считывается один раз.
+            </p>
         </div>
     </div>
     <!--p35-->
     <div class="wrapper">
         <div class="container">
+            <img src="image/image1_page_35.jpg" style="width: 60%;">
+            <p class="paragraph">
+                Промежуточное положение между описанными двумя вариантами занимает двухпроходный компилятор (рис. 20,
+                <i>в</i>). В этом случае синтаксический анализатор, вызывая лексический анализатор, получает
+                лексемы и строит файл во внутреннем представлении. Генератор кода считывает этот файл и создает
+                объектный код.
+            </p>
+            <h3>Варианты заданий</h3>
+            <p class="paragraph italic">
+                1. Разработать однопроходный транслятор с исходного языка на язык Фортран:
+            </p>
+            <p class="code">
+                программа X;<br>
+                переменные у,z: вещественные;<br>
+                &nbsp;&nbsp;&nbsp;i: целые;<br>
+                z=0;<br>
+                цикл i от 1 до 10 выполнить<br>
+                z=z*y;<br>
+                вывод z;<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                2. Разработать двухпроходный транслятор с исходного языка на язык Фортран:
+            </p>
+            <p class="code">
+                program EF:<br>
+                var i,n: integer;<br>
+                h: real;<br>
+                begin<br>
+                read(n);<br>
+                h:=0;<br>
+                for i:=n downto 1 do h:=h+1/i;<br>
+                writeln(h)
+            </p>
+            <p class="paragraph italic">
+                3. Разработать трехпроходный транслятор с исходного языка на язык ПЛ-1:
+            </p>
+            <p class="code">
+                program g;<br>
+                vаг u, v, max. min: real;<br>
+                begin<br>
+                read(u,v);<br>
+                max:=10;<br>
+                min:=0;<br>
+                if u&gt;v then
+            </p>
         </div>
     </div>
     <!--p36-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                begin<br>
+                if u&gt;max then max:=u;<br>
+                if v&lt;min then min:=v<br>
+                end<br>
+                &nbsp;&nbsp;&nbsp;else<br>
+                begin<br>
+                &nbsp;if v&gt;max then .max:=v;<br>
+                &nbsp;&nbsp;if u&lt;min then min:=u<br>
+                &nbsp;end;<br>
+                write(max,min)<br>
+                end.
+            </p>
+            <p class="paragraph italic">
+                4. Разработать однопроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                программа В;<br>
+                переменные с, а, k: вещественные;<br>
+                &nbsp;&nbsp;&nbsp;i: целые;<br>
+                s=0;<br>
+                i=1;<br>
+                ввод а;<br>
+                начало цикла<br>
+                &nbsp;&nbsp;&nbsp;s=s+1/i;<br>
+                i=i+1;<br>
+                &nbsp;&nbsp;&nbsp;если s&gt;a то закончить цикл;<br>
+                вывод i,s<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                5. Разработать двухпроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                программа Z;<br>
+                переменные а,b,c: вещественные;<br>
+                начало<br>
+                &nbsp;&nbsp;&nbsp;ввод а,b,с;<br>
+                &nbsp;&nbsp;&nbsp;если а&gt;b и b&gt;с то выполнить<br>
+                (a=2*a;b=2*b;c=2*c)<br>
+                иначе выполнить ( a=|a|; b=|b|; c=|c| );<br>
+                вывод a,b,c;<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                6. Разработать трехпроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                программа. W;<br>
+                переменные х: вещественные;<br>
+                i: целые;<br>
+                ввод i,x;<br>
+                &nbsp;если i равен<br>
+                &nbsp;&nbsp;[ 0 то x=0,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1 то х=sin(х),<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2 то x=cos(x),<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3 то х=х*x]<br>
+                х=х/2;<br>
+                &nbsp;&nbsp;&nbsp;вывод х;<br>
+                &nbsp;&nbsp;&nbsp;конец.
+            </p>
+            <p class="paragraph italic">
+                7. Разработать однопроходный транслятор с исходного языка на язык ассемблера:
+            </p>
         </div>
     </div>
     <!--p37-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                программа С;<br>
+                переменные х,у,z:целые;<br>
+                ввод х,у:<br>
+                если x&gt;у то z=x–y<br>
+                &nbsp;&nbsp;&nbsp;иначе z=y–x+l;<br>
+                &nbsp;&nbsp;вывод z;<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                8. Разработать двухпроходный транслятор с исходного языка на язык ассемблера:
+            </p>
+            <p class="code">
+                программа М;<br>
+                переменные i,j: целые;<br>
+                ввод i,j;<br>
+                если i&gt;j то вывод I иначе (i=i+j, вывод i);<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                9. Разработать трехпроходный транслятор с исходного языка на язык ассемблера:
+            </p>
+            <p class="code">
+                program К;<br>
+                &nbsp;&nbsp;label 1;<br>
+                &nbsp;vаг f, i, n: integer;<br>
+                &nbsp;&nbsp;begin<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;read(n);<br>
+                f:=1; i:=1;<br>
+                1: f:=f*i;<br>
+                &nbsp;&nbsp;i:=i+1;<br>
+                &nbsp;if i&lt;=n then goto 1;<br>
+                writeln(f)<br>
+                end.
+            </p>
+            <p class="paragraph italic">
+                10. Разработать однопроходный транслятор с исходного языка на язык Бейсик:
+            </p>
+            <p class="code">
+                программа К;<br>
+                переменные n, i, f: целые;<br>
+                &nbsp;&nbsp;f=l;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;ввод (n);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;цикл i=1,n выполнить f=f*i;<br>
+                вывод (f)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                11. Разработать двухпроходный транслятор с исходного языка на язык Бейсик:
+            </p>
+            <p class="code">
+                real p,x<br>
+                integer i,n<br>
+                accept *,x,n<br>
+                р=1<br>
+                do 15 I=1,n<br>
+                p=p*(1–x/i)**2<br>
+                &nbsp;&nbsp;15 continue<br>
+                stop<br>
+                end
+            </p>
+            <p class="paragraph italic">
+                12. Разработать трехпроходный транслятор с исходного языка на язык Бейсик:
+            </p>
+            <p class="code">
+                real x,y<br>
+                accept *,x,n<br>
+                if (x.LT.0) y=x**2
+            </p>
         </div>
     </div>
     <!--p38-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                if (х.GЕ.0) у=х**З<br>
+                type *,у<br>
+                stop<br>
+                end
+            </p>
+            <p class="paragraph italic">
+                13. Разработать трехпроходный транслятор с исходного языка на язык Фортран:
+            </p>
+            <p class="code">
+                программа Р;<br>
+                переменные s: вещественные;<br>
+                &nbsp;&nbsp;&nbsp;i, n: целые;<br>
+                s=1;<br>
+                ввод n;<br>
+                &nbsp;&nbsp;&nbsp;цикл 1 oт 1 до n с шагом 2<br>
+                выполнить s=s*i/(i+1);<br>
+                вывод s;<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                14. Разработать двухпроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                программа Е;<br>
+                переменные h: вещественные;<br>
+                &nbsp;&nbsp;&nbsp;n: целые;<br>
+                h:=0;<br>
+                читать(n);<br>
+                пока n &gt; 0 выполнить<br>
+                (h:=h+l/n; n:=n–l);<br>
+                печатать (h)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                15. Разработать однопроходный транслятор с исходного языка на язык ПЛ-1:
+            </p>
+            <p class="code">
+                integer m,n<br>
+                do 10 n=11,49,2<br>
+                m=n**2<br>
+                type *,n,m<br>
+                &nbsp;&nbsp;&nbsp;10 continue<br>
+                stop<br>
+                end<br>
+            </p>
+            <p class="paragraph italic">
+                16. Разработать однопроходный транслятор с исходного языка на язык Фортран:
+            </p>
+            <p class="code">
+                program К16;<br>
+                var i,n: integer;<br>
+                &nbsp;&nbsp;&nbsp;р,а:.геа1;<br>
+                begin<br>
+                &nbsp;&nbsp;&nbsp;read(n);<br>
+                &nbsp;&nbsp;&nbsp;p:=1;<br>
+                for i:=l to n do p:=p*(a+i–1);<br>
+                write(p)<br>
+                end.
+            </p>
+            <p class="paragraph italic">
+                17. Разработать двухпроходный транслятор с исходного языка на язык ПЛ-1:
+            </p>
+            <p class="code">
+                программа PC;<br>
+                переменные х, у: вещественные;<br>
+                ввод (х,у);<br>
+                &nbsp;&nbsp;&nbsp;если х&gt;у то [ y=(x+y)/2;x=x*y/2]
+            </p>
         </div>
     </div>
     <!--p39-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                иначе [ х=(x+у)/2; у=x*у/2 ];<br>
+                вывод (х, у)<br>
+                конец.<br>
+            </p>
+            <p class="paragraph italic">
+                18. Разработать однопроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                real х,s<br>
+                integer k,i,n<br>
+                &nbsp;&nbsp;accept *,x,n<br>
+                &nbsp;&nbsp;s=0<br>
+                &nbsp;&nbsp;do 10 i=1,n<br>
+                &nbsp;&nbsp;k=2*i+1<br>
+                &nbsp;&nbsp;s=s+cos(k*x)/k<br>
+                10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type *,s<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end
+            </p>
+            <p class="paragraph italic">
+                19. Разработать трехпроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                процедура X;<br>
+                переменные s1,s2,а, b: вещественные;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i,j:целые:<br>
+                s1:=0;<br>
+                s2:=0;<br>
+                ввод (a,b);<br>
+                &nbsp;&nbsp;цикл i от 0 до 10 шаг 2 выполнить<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;[<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s1:=s2+a;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s2:=0;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;цикл j от 1 до 20 шаг l выполнить<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s2:=s2+b;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;]<br>
+                &nbsp;&nbsp;передача (sl)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                20. Разработать двухпроходный транслятор с исходного языка в язык Си:
+            </p>
+            <p class="code">
+                procedure К;<br>
+                var i,n,f: integer;<br>
+                begin<br>
+                read(n);<br>
+                f:=1;<br>
+                i:=1;<br>
+                while i&lt;=n do<br>
+                &nbsp;&nbsp;begin<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;f:=f*i;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;i:=i+1<br>
+                &nbsp;end;<br>
+                write(f)<br>
+                end.
+            </p>
+            <p class="paragraph italic">
+                21. Разработать трехпроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                main( )
+                { int i;
+            </p>
         </div>
     </div>
     <!--p40-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                double h,b,a,m,n,d,x;<br>
+                scanf (“%le%le&quot;,&amp;a,&amp;b);<br>
+                h=(b-a)/10;<br>
+                for(I=0; i&lt;=10;i++)<br>
+                { x=a+h*i;<br>
+                m=(2*h*h-4)/(2*h);<br>
+                n=(2–h)/(2+h);<br>
+                d=m*h*h–m*n;<br>
+                printf (“\n%le,%le”,x,d);<br>
+                }<br>
+                }
+            </p>
+            <p class="paragraph italic">
+                22. Разработать однопроходный транслятор с исходного языка на язык Бейсик:
+            </p>
+            <p class="code">
+                программа Z;<br>
+                переменные у,k: вещественные;<br>
+                &nbsp;&nbsp;&nbsp;i,n: целые;<br>
+                ввод (k);<br>
+                ввод (n);<br>
+                &nbsp;&nbsp;&nbsp;цикл i от 1 до n выполнить<br>
+                k:=k*y;<br>
+                вывод (k)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                23. Разработать однопроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                программа АВ;<br>
+                переменные i, n: integer;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;h: real;<br>
+                начало<br>
+                &nbsp;&nbsp;читать(n);<br>
+                &nbsp;&nbsp;h=0;<br>
+                &nbsp;&nbsp;цикл i от n до 1 с шагом –1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;выполнять<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h=h+1/i;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;вывести(h)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                24. Разработать двухпроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                программа А;<br>
+                переменные k:целые;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;t, eps, sx, s: вещественные;<br>
+                начало<br>
+                &nbsp;&nbsp;читать(eps,sx);<br>
+                &nbsp;&nbsp;s=0; k=1; t=1;
+                &nbsp;&nbsp;пока |t|&gt;eps выполнять<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{ k:=k+2;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t:=–t*sx/(k*(k–1));<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s:=s+t<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;вывести(h)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                25. Разработать трехпроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                программа z;
+            </p>
         </div>
     </div>
     <!--p41-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                переменные i:целые;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;x: вещественные;<br>
+                начало<br>
+                &nbsp;&nbsp;читать(i); читать(x);<br>
+                &nbsp;&nbsp;пока (i&lt;4) и (i&gt;0) выполнять<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;если i<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=0 то x:=0;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=1 то x:=sin(x);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=2 то x:=exp(x);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=3 то x:=cos(x);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=4 то x:=ln(x)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;все;<br>
+                &nbsp;&nbsp;вывести(x);<br>
+                &nbsp;}<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                26. Разработать однопроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                integer i,j<br>
+                real c,p<br>
+                do 2 i=1,10<br>
+                do 2 j=1,10<br>
+                c=a+i*j<br>
+                if (c.ge.1.and.c.le.10) p=p*c<br>
+                &nbsp;&nbsp;2 continue<br>
+                stop<br>
+                end
+            </p>
+            <p class="paragraph italic">
+                27. Разработать двухпроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                integer f,i,n<br>
+                accept *,n<br>
+                f=1<br>
+                i=1<br>
+                do 1 i=1,n,1<br>
+                f=f*i<br>
+                1 continue<br>
+                type *,f<br>
+                stop<br>
+                end
+            </p>
+            <p class="paragraph italic">
+                28. Разработать трехпроходный транслятор с исходного языка на язык Паскаль:
+            </p>
+            <p class="code">
+                программа xy;<br>
+                переменные k,l:целые;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sx,sy,x, y: вещественные;<br>
+                начало<br>
+                &nbsp;&nbsp;sx=0;<br>
+                &nbsp;&nbsp;sy=0;<br>
+                &nbsp;&nbsp;цикл k от 0 до 5 шаг 1 выполнять<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sx:=sy+x;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sy:=0; <br>
+            </p>
         </div>
     </div>
     <!--p42-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                &nbsp;&nbsp;цикл l от 1 до 10 шаг 1 выполнять<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sy:=sy+y<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;вывести(sx,sy)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                29. Разработать однопроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                программа l;<br>
+                переменные i,n,f:целые;<br>
+                начало<br>
+                &nbsp;&nbsp;читать(n);<br>
+                &nbsp;&nbsp;&nbsp;f=1; i=1;<br>
+                &nbsp;&nbsp;пока i&lt;=n выполнять<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ f:=–f*i;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i:=i+1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;&nbsp;вывести(f)<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                30. Разработать двухпроходный транслятор с исходного языка на язык ПЛ-1:
+            </p>
+            <p class="code">
+                программа с;<br>
+                переменные i:целые;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b, h, m, n, d, x: вещественные;<br>
+                начало<br>
+                &nbsp;читать(a,b);<br>
+                &nbsp;h=(b–a)/10;<br>
+                &nbsp;цикл (i=0; i&lt;=10; i++)<br>
+                &nbsp;&nbsp;{ x:=a+h*i;<br>
+                &nbsp;&nbsp;&nbsp;m:=(2*h*h–4)/(2*h);<br>
+                &nbsp;&nbsp;&nbsp;n:=(2–h)/(2+h);<br>
+                &nbsp;&nbsp;&nbsp;d:=m*h*h–m*n;<br>
+                &nbsp;&nbsp;&nbsp;вывести(h)<br>
+                &nbsp;&nbsp;};<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                31. Разработать трехпроходный транслятор с исходного языка на язык ПЛ-1:
+            </p>
+            <p class="code">
+                main()<br>
+                {<br>
+                int i,j;<br>
+                double a,b;<br>
+                scanf(&quot;%le%le&quot;,&amp;a,&amp;b);<br>
+                s1=0;<br>
+                s2=0;<br>
+                for (i=0; i&lt;=10; i=i+2)<br>
+                &nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;s1=s2+a;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;s2=0;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for (j=0; j&lt;=20; i++)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s2=s2+b;<br>
+                &nbsp;&nbsp;}<br>
+                printf (&quot;\n%le%le&quot;,s1,s2)<br>
+                }
+            </p>
         </div>
     </div>
     <!--p43-->
     <div class="wrapper">
         <div class="container">
+            <p class="paragraph italic">
+                32. Разработать однопроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                программа g;<br>
+                переменные i: integer;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u, v, min, max: real;<br>
+                начало<br>
+                &nbsp;читать(u,v); min:=0; max:=10;<br>
+                &nbsp;&nbsp;цикл i от 1 до 10 с шагом 1 выполнять<br>
+                &nbsp;&nbsp;&nbsp;{ если u&gt;v то<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;если u&gt;max то max:=u;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;если v&lt;min то min:=v; }<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;иначе<br>
+                &nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;если v&gt;max то max:=v;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;если u&lt;min то min:=u;<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;вывести(max,min);<br>
+                }<br>
+                конец.
+            </p>
+            <p class="paragraph italic">
+                33. Разработать двухпроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                real h<br>
+                integer i,n<br>
+                accept *,n<br>
+                h=1<br>
+                do 2 i=n,1,–1<br>
+                h=h+1/i<br>
+                &nbsp;2 continue<br>
+                type *,f<br>
+                stop<br>
+                end
+            </p>
+            <p class="paragraph italic">
+                34. Разработать трехпроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                real s<br>
+                integer i,n<br>
+                accept *,n<br>
+                s=1<br>
+                do 3 i=1,n,2<br>
+                s=s*i/(i+1)<br>
+                &nbsp;&nbsp;3 continue<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;type *,s<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stop<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;end
+            </p>
+            <p class="paragraph italic">
+                35. Разработать однопроходный транслятор с исходного языка на язык Си:
+            </p>
+            <p class="code">
+                программа xz;<br>
+                переменные k, i, n:целые;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s, x: вещественные;<br>
+                начало<br>
+                &nbsp;&nbsp;читать(x,n);<br>
+                &nbsp;&nbsp;s=0;<br>
+                &nbsp;&nbsp;цикл i=1 до n шаг 1 выполннять
+            </p>
         </div>
     </div>
     <!--p44-->
     <div class="wrapper">
         <div class="container">
+            <p class="code">
+                { k:=2*i+1;<br>
+                &nbsp;&nbsp;s:=s+cos(k*x)/k;<br>
+                }<br>
+                &nbsp;&nbsp;вывести(s);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;конец.
+            </p>
+            <p class="paragraph">
+                <i>Примечание</i>: приведенный в задании пример программы определяет структуру программы на исходном
+                языке; тип и структуру операторов исходного языка.
+            </p>
+            <p class="paragraph">Количество идентификаторов, операторов, порядок их следования может быть любым.</p>
+            <p class="paragraph">Разрабатываемый транслятор должен распознавать орфографические (неописанный
+                идентификатор
+                и повторное описание идентификатора) и синтаксические ошибки, а также выдавать сообщения о них.</p>
+            <p class="paragraph">Варианты заданий отличаются используемым методом синтаксического анализа.</p>
         </div>
     </div>
     <!--p45-->
     <div class="wrapper">
         <div class="container">
+            <h1>
+                ЗАКЛЮЧЕНИЕ
+            </h1>
+            <hr>
+            <p class="paragraph">В рамках дисциплины "Лингвистическое и программное обеспечение САПР" студенты выполняют
+                лабораторные работы, посвященные отдельным этапам трансляции. Все необходимые материалы представлены в
+                данном учебном пособии. Рассмотрены основные подходы к созданию транслирующих процедур. Показаны
+                основные способы организации трансляторов: однопроходных, двухпроходных, трехпроходных. Приведены
+                основные методы организации таблиц символов и их взаимодействие с основными частями транслятора:
+                механическим анализатором, синтаксическим анализатором и генератором
+                кода. Рассмотрены основные методы машинно-независимой оптимизации кода и на их примере – организация
+                внутреннего представления программы, в том числе циклических процедур. Обобщая полученные знания,
+                студент выполняет курсовую работу.</p>
+            <p class="paragraph">В учебном пособии приведены алгоритмы различных методов синтаксического анализа и
+                организации таблиц символов. Это поможет студентам в разработке отдельных процедур транслирующих
+                программ.</p>
         </div>
     </div>
     <!--p46-->
     <div class="wrapper">
         <div class="container">
+            <h1>
+                СПИСОК ЛИТЕРАТУРЫ
+            </h1>
+            <hr>
+            <ol>
+                <li>Ахо, А., Компиляторы: принципы, технологии и инструменты / А. Ахо, Р. Сети, Дж. Ульман. –
+                    М. : Издательский дом «Вильямс», 2001.</li>
+                <li>Ахо, А. Теория синтаксического анализа, перевода и компиляции / А. Ахо, Дж. Ульман. – М. :
+                    Мир, 1976. – Т. 1, 2.</li>
+                <li>Бек, Л. Введение в системное программирование / Л. Бек. – М. : Миp, 1988.</li>
+                <li>Грис, Д. Koнcтруировaниe компиляторов для цифровых вычислительных машин / Д. Грис. – М. :
+                    Мир, 1975.</li>
+                <li>Маккиман, У. Генератор компиляторов / У. Маккиман, Дж. Хорнинг, Д. Уортман. – М. : Статистика, 1980.
+                </li>
+                <li>Рейуорд-Смит, В.Дж. Теория формальных языков. Вводный курс / В.Дж. Рейуорд-Смит. – М. :
+                    Радио и связь, 1988.</li>
+                <li>Разработка компиляторов : лабораторные работы / сост. И.Л. Коробова. – Тамбов : Тамб. гос. техн.
+                    ун-т, 1997. – 28 с.</li>
+                <li>Проектирование трансляторов : методические указания / сост. : И.Л. Коробова, Д.В. Абрамов.
+                    Тамбов : Изд-во Тамб. гос. техн. ун-та, 2000. – 28 с.</li>
+            </ol>
         </div>
     </div>
-
     <!--p47-->
     <div class="wrapper">
         <div class="container">
+            <h1>
+                ОГЛАВЛЕНИЕ
+            </h1>
+            <hr>
+            <table align="center" class="ogl noborder" style="width: 275px; table-layout: fixed;">
+                <tr>
+                    <td>
+                        ВВЕДЕНИЕ<span class="dots">..............................................................</span>
+                    </td>
+                    <td width="25px">3</td>
+                </tr>
+                <tr>
+                    <td>
+                        1. ТЕОРИЯ ТРАНСЛЯЦИИ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1. Лексический анализ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2. Синтаксический анализ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1. Метод рекурсивного спуска<span class="dots">..............................................................</span>
+                    </td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.2. Метод операторного предшествования<span class="dots">..............................................................</span>
+                    </td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3. Внутреннее представление программы<span class="dots">..............................................................</span>
+                    </td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3.1. Последовательность четверок<span class="dots">..............................................................</span>
+                    </td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3.2. Постфиксная запись<span class="dots">..............................................................</span>
+                    </td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4. Генерация кода<span class="dots">..............................................................</span>
+                    </td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>
+                        2. ОРГАНИЗАЦИЯ ТАБЛИЦ СИМВОЛОВ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1. Упорядоченные и неупорядоченные таблицы<span class="dots">..............................................................</span>
+                    </td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2. Хеш-адресация<span class="dots">..............................................................</span>
+                    </td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3. Рехеширование<span class="dots">..............................................................</span>
+                    </td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.1. Линейное рехеширование<span class="dots">..............................................................</span>
+                    </td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.2. Случайное рехеширование<span class="dots">..............................................................</span>
+                    </td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.3. Рехеширование сложением<span class="dots">..............................................................</span>
+                    </td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4. Метод цепочек<span class="dots">..............................................................</span>
+                    </td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>
+                        3. ОПТИМИЗАЦИЯ КОДА<span class="dots">..............................................................</span>
+                    </td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>
+                        КОНТРОЛЬНЫЕ ВОПРОСЫ И ЗАДАНИЯ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>
+                        КУРСОВАЯ РАБОТА ПО ДИСЦИПЛИНЕ<br>"ЛИНГВИСТИЧЕСКОЕ И ПРОГРАММНОЕ<br>ОБЕСПЕЧЕНИЕ САПР"<span class="dots">..............................................................</span>
+                    </td>
+                    <td>58</td>
+                </tr>
+                <tr>
+                    <td>
+                        ЗАКЛЮЧЕНИЕ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>
+                        СПИСОК ЛИТЕРАТУРЫ<span class="dots">..............................................................</span>
+                    </td>
+                    <td>77</td>
+                </tr>
+            </table>
         </div>
     </div>
     <!--p11-->
-    <div class="wrapper">
-        <div class="container">
-        </div>
-    </div>
-    <!--p11-->
-    <div class="wrapper">
-        <div class="container">
-        </div>
-    </div>
-    <!--p11-->
-    <div class="wrapper">
-        <div class="container">
-        </div>
-    </div>
-    <!--p11-->
-    <div class="wrapper">
-        <div class="container">
-        </div>
-    </div>
-    <!--p11-->
-    <div class="wrapper">
-        <div class="container">
-        </div>
-    </div>
     <div class="navigation">
         <button class="back">Назад</button>
         <button class="next">Далее</button>

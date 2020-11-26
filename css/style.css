@@ -181,6 +181,20 @@ th, td
 	padding: 2px 5px;
 }
 
+.vertical_header {
+    text-align:center;
+    white-space:nowrap;
+    transform-origin:50% 50%;
+    transform: rotate(-90deg);
+    
+}
+.vertical_header:before {
+    content:'';
+    padding-top:110%;
+    display:inline-block;
+    vertical-align:middle;
+}
+
 table.start td {
 	vertical-align: top;
 	text-align: start;
@@ -223,6 +237,7 @@ img
 {
 	text-align: justify;
 	text-indent: 20px;
+	line-height: 1.3;
 }
 
 .expressions

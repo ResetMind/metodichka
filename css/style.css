@@ -192,16 +192,23 @@ box-shadow: 0px 0px 5px 0px rgba(126, 126, 126, 1);*/
 	margin: 5px 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	transition-duration: 0.3s;
     text-decoration: none;
     color: #efedef;
 }
 
-.hidden_menu li:hover {
+a {
+	color: #f4f8f9;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+a:hover {
     transition-duration: 0.3s;
 	color: #abffc7;
 	cursor: pointer;
 }
+
+/*container*/
 
 span.page_num {
 	position: absolute;
@@ -388,15 +395,15 @@ ol li {
 }
 
 ol li:before {
-    counter-increment: list1; /* Увеличиваем значение счетчика */
-    content: counter(list1) ". "; /* Выводим число */
+    counter-increment: list1; 
+    content: counter(list1) ". "; 
 }
 
-ol ol { counter-reset: list2;} /* Инициируем счетчик вложенного списка */
+ol ol { counter-reset: list2;} 
 
 ol ol li:before {
-    counter-increment: list2; /* Увеличиваем значение счетчика вложенного списка */
-    content: counter(list1) "." counter(list2) ". "; /* Выводим число */
+    counter-increment: list2;
+    content: counter(list1) "." counter(list2) ". ";
 }
 
 h1 {
@@ -459,4 +466,13 @@ h3 {
 	width: 60px;
 	height: 40px;
 	margin: 10px auto;
+}
+
+#code_5
+{
+	margin: 5px auto;
+	text-align: center;
+	width: 105px;
+	padding: 10px 74px 10px 74px;
+	border: 1px solid black;
 }

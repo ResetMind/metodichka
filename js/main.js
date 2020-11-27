@@ -49,6 +49,11 @@ open_menu_btn.onclick = function () {
     filter.classList.add("active");
     filter.classList.remove("close");
     filter.classList.add("show");
+    document.body.onclick = function(e) {
+        if(e.clientX > hidden_menu.getBoundingClientRect().width) {
+            close_menu_btn.dispatchEvent(new Event("click"));
+        }
+    }
 }
 
 close_menu_btn.onclick = function () {
@@ -56,6 +61,7 @@ close_menu_btn.onclick = function () {
     filter.classList.remove("show");
     filter.classList.add("close");
     setTimeout(() => filter.classList.remove("active"), 200);
+    document.body.onclick = null;
 }
 
 pages.onscroll = function () {

@@ -13,19 +13,24 @@ body
 {
 	height: 100vh;
 	margin: 0;
-	background: #2A4480;
+	/*background: #2A4480;*/
+	background: #333333;
 	font-size: 10px;
 }
 
 .wrapper
 {
+	position: relative;
 	margin: auto;
 	margin-top: 5px;
 	width: 496px;
 	height: 702px;
 	box-sizing: border-box;
-	border: 1px solid black;
+	border: 1px solid white;
 	background: white;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(126, 126, 126, 0.15);
+-moz-box-shadow: 0px 0px 5px 0px rgba(126, 126, 126, 0.15);
+box-shadow: 0px 0px 5px 0px rgba(126, 126, 126, 0.15);
 }
 
 .container {
@@ -128,6 +133,12 @@ body
 	top: -7px;
 }
 
+span.page_num {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
 p {
 	padding: 0;
 	margin:0;
@@ -215,7 +226,7 @@ table.ogl tr td ~ td {
 	text-align: center;
 }
 
-table.noborder td, table.noborder th {
+table.noborder td, table.noborder th, td.noborder {
 	border: 0;
 }
 

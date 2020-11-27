@@ -24,6 +24,12 @@ page_num_input.oninput = function () {
     }
 }
 
+document.body.onkeydown = function(e) {
+    if(e.key == "Enter") {
+        page_num_input.blur();
+    }
+}
+
 backward.onclick = function () {
     let value = checkValue(page_num_input.value);
     if(value != false) {

@@ -10,6 +10,15 @@ let backward = document.querySelector(".hat i.backward");
 let forward = document.querySelector(".hat i.forward");
 let page_num_input = document.querySelector(".hat .page_num_input");
 let test_image = document.querySelector(".test_image");
+let gifs = document.querySelectorAll("img.gif");
+let gifs_object = [];
+for (let i = 0; i < gifs.length; i++) {
+    gifs_object.push({
+        gif: gifs[i],
+        src: gifs[i].src,
+        visible: false
+    });
+}
 
 page_num_input.oninput = function () {
     let value = checkValue(page_num_input.value);
@@ -24,28 +33,28 @@ page_num_input.oninput = function () {
     }
 }
 
-document.body.onkeydown = function(e) {
-    if(e.key == "Enter") {
+document.body.onkeydown = function (e) {
+    if (e.key == "Enter") {
         page_num_input.blur();
     }
 }
 
 backward.onclick = function () {
     let value = checkValue(page_num_input.value);
-    if(value != false) {
+    if (value != false) {
         value--;
-        if(value > 0) {
-            wrapper[value - 1].scrollIntoView({ block: 'start',  behavior: 'smooth' });
+        if (value > 0) {
+            wrapper[value - 1].scrollIntoView({ block: 'start', behavior: 'smooth' });
         }
     }
 }
 
 forward.onclick = function () {
     let value = checkValue(page_num_input.value);
-    if(value != false) {
+    if (value != false) {
         value++;
-        if(value < 48) {
-            wrapper[value - 1].scrollIntoView({ block: 'start',  behavior: 'smooth' });
+        if (value < 48) {
+            wrapper[value - 1].scrollIntoView({ block: 'start', behavior: 'smooth' });
         }
     }
 }
@@ -55,8 +64,8 @@ open_menu_btn.onclick = function () {
     filter.classList.add("active");
     filter.classList.remove("close");
     filter.classList.add("show");
-    document.body.onclick = function(e) {
-        if(e.clientX > hidden_menu.getBoundingClientRect().width) {
+    document.body.onclick = function (e) {
+        if (e.clientX > hidden_menu.getBoundingClientRect().width) {
             close_menu_btn.dispatchEvent(new Event("click"));
         }
     }
@@ -72,58 +81,19 @@ close_menu_btn.onclick = function () {
 
 pages.onscroll = function () {
     page_num_input.value = getPageNum();
-    /*listenedElements.forEach(item => {
-        // проверяем находится ли элемент в зоне видимости
-        let result = isVisible(item.el);
-
-        // если элемент находился в зоне видимости и вышел из нее
-        // вызываем обработчик выпадения из зоны видимости
-        if (item.el.isVisible && !result) {
-            item.el.isVisible = false;
-            item.outVisibleSpace(item.el);
-            return;
+    gifs_object.forEach(item => {
+        let result = isVisible(item.gif);
+        if (result != false && !item.visible) {
+            console.log("showed");
+            item.visible = true;
+            item.gif.src = item.src;
+        } else if (!result && item.visible) {
+            console.log("hidden");
+            item.visible = false;
+            item.gif.src = "";
         }
-        // если элемент находился вне зоны видимости и вошел в нее
-        // вызываем обработчик попадания в зону видимости
-        if (!item.el.isVisible && result) {
-            item.el.isVisible = true;
-            item.inVisibleSpace(item.el);
-            return;
-        }
-    });*/
-}
-
-// функция устанавливает обработчики событий 
-// появления элемента в зоне видимости и
-// выхода из нее
-/*function onVisibleSpaceListener(elementId, cbIn, cbOut) {
-    // получаем ссылку на объект элемента
-    let el = document.getElementById(elementId);
-    // добавляем элемент и обработчики событий 
-    // в массив отслеживаемых элементов
-    listenedElements.push({
-        el: el,
-        inVisibleSpace: cbIn,
-        outVisibleSpace: cbOut
     });
-}*/
-
-// устанавливаем обработчики для элемента "video"
-/*onVisibleSpaceListener("video",
-    el => {
-        // функция вызываемая при попадании элемента в зону видимости
-        // тут вставляем код запуска анимации
-        el.innerHTML = "111111111111111111111111";
-        window.alert("элемент в зоне видимости");
-
-    },
-    el => {
-        // функция вызываемая при выпадении элемента из зоны видимости
-        // тут вставляем код остановки анимации
-        el.innerHTML = "000000000000000000000000";
-        window.alert("элемент вне зоны видимости");
-    }
-);*/
+}
 
 function getPageNum() {
     let offsets = [];
@@ -171,11 +141,6 @@ function isVisible(element) {
     }
     return visible_size;
 }
-
-// глобальный объект с элементами, для которых отслеживаем их положение в зоне видимости
-let listenedElements = [];
-// обработчик события прокрутки экрана. Проверяет все элементы добавленные в listenedElements 
-// на предмет попадания(выпадения) в зону видимости
 
 function checkValue(value) {
     value = parseFloat(+page_num_input.value);

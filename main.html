@@ -722,7 +722,6 @@
                     При нисходящем разборе дерево строится от корня (начального символа) вниз к концевым узлам
                     (рис. 2)
                 </p>
-                <!--<img id="image1" src="image/image1_page_8.jpg">-->
                 <p class="expressions">N&rarr;NB&rarr;N5&rarr;B5&rarr;35</p>
                 <p class="expressions">
                     N<br>
@@ -740,7 +739,6 @@
                     Восходящий разбор состоит в том, что, отправляясь от заданной цепочки, пытаются привести ее к
                     начальному символу (рис. 3).
                 </p>
-                <!--<img id="image2" src="image/image2_page_8.jpg">-->
                 <p class="expressions">35&rarr;B5&rarr;N5&rarr;NB&rarr;N</p>
                 <p class="expressions">
                     N<br>
@@ -932,8 +930,10 @@
                     входного
                     предложения завершен.
                 </p>
-                <img id="image1" src="image/image1_page_11.jpg">
-                <!--<div><div style="border: 1px solid black; width: 60px; height: 20px; text-align: center;">Ввод</div>&ensp;<span style = "transform: rotate(45deg);">&brvbar;</span>&ensp;&ensp;&ensp;&brvbar;<br>read&ensp;)</div>-->
+                <img class="gif" src="image/image1_page_11.gif" style="width: 50%;">
+                <p class='picture_number'>
+                    Рис.4
+                </p>
                 <p class="paragraph">
                     Приведем еще один пример. Имеем предложение из исходной программы:
                 </p>
@@ -1065,14 +1065,14 @@
                     которая
                     обнаруживает лексему конст. и передает управление в процедуру &lt;арифметическое выражение&gt; (рис.
                     7, <i>a</i>).</p>
-                <img class="test_image" id="image1" src="image/image1_page_13.jpg">
+                <img id="image1" src="image/image1_page_13.jpg">
             </div>
             <span class="page_num">13</span>
         </div>
         <!--p14-->
         <div class="wrapper">
             <div class="container">
-                <img id="image1" src="image/image1_page_14.jpg">
+                <img src="image/image1_page_14.jpg">
                 <p class="paragraph">6. Процедура &lt;арифметическое выражение&gt; распознает лексему –, затем вызывает
                     процедуру
                     &lt;слагаемое&gt;, которая вызывает процедуру &lt;значение&gt;, которая распознает лексему ид и
@@ -1088,15 +1088,15 @@
                     процедура, в свою очередь, успешно заканчивается и передает управление в процедуру
                     &lt;присваивание&gt;, которая формирует признак успешного завершения. На этом разбор этого
                     предложения заканчивается (рис. 8).</p>
-                <img id="image2" src="image/image2_page_14.jpg">
+                <img src="image/image2_page_14.jpg">
             </div>
             <span class="page_num">14</span>
         </div>
         <!--p15-->
         <div class="wrapper">
             <div class="container">
-                <img id="image1" src="image/image1_page_15.jpg">
-                <img id="image2" src="image/image2_page_15.jpg">
+                <img src="image/image1_page_15.jpg">
+                <img src="image/image2_page_15.jpg">
                 <p class="paragraph">
                     Мы привели примеры грамматического разбора отдельных предложений методом рекурсивного
                     спуска. Однако этот метод применим и ко всей программе в целом. В этом случае для осуществления
@@ -1925,7 +1925,7 @@
                     фрагмент выделен, он интерпретируется как некоторый очередной нетерминальный символ в соответствии с
                     каким-нибудь правилом грамматики. Этот процесс продолжается до тех пор, пока предложение
                     не будет распознано целиком.</p>
-                <img id="image" src="image/image1_page_19.jpg">
+                <img src="image/image1_page_19.jpg">
                 <p class="paragraph">Обратите внимание, что каждый фрагмент дерева грамматического разбора строится,
                     начиная
                     с конечных узлов вверх, в сторону корня дерева. Отсюда и возник термин восходящий разбор. Если мы
@@ -1975,7 +1975,7 @@
                     ограниченные отношениями '&lt; &gt;' , записываются во внутреннее представление (блоки 9–10) .</p>
                 <p class="paragraph">В блоках 12 – 14 элементы массива лексем сдвигаются на длину выведенной
                     цепочки. Так продолжается, пока не распознана вся последовательность лексем.</p>
-                <img id="image" src="image/image1_page_20.jpg">
+                <img src="image/image1_page_20.jpg">
             </div>
             <span class="page_num">20</span>
         </div>
@@ -2254,7 +2254,7 @@
                     последовательность четверок
                     имеет вид:
                 </p>
-                <img id="image_1" src="image/image1_page_23.jpg">
+                <img src="image/image1_page_23.jpg">
                 <p class="paragraph">
                     В основе процедуры генерации кода лежит оператор саsе:
                 </p>
@@ -2280,7 +2280,6 @@
                     сдвигаться
                     в сторону конца массива, при чтении из стека указатель вершины будет перемещатьсяя в сторону начала
                     массива (рис. 11).</p>
-                <!--<img id="image_2" src="image/image2_page_23.jpg">-->
                 <table align="center" style="width: 250px; table-layout: fixed;">
                     <tr>
                         <td colspan="5" class="noborder"><i>i</i></td>
@@ -2413,7 +2412,6 @@
                     <a name="ha"></a>
                     2.2. ХЕШ-АДРЕСАЦИЯ
                 </h2>
-                <img src="">
                 <p class="paragraph">
                     Наиболее эффективный и широко применяемый в компиляторах метод при работе с таблицами
                     символов – хеш-адресация. Механизм расстановки состоит из таблицы и хеш-функции (табл. 7).
@@ -2609,8 +2607,6 @@
                     </li>
                     <li>Заносим содержимое УК в указатель 4 хеш-таблицы</li>
                 </ol>
-                <!--<img src="image/image1_page_26.jpg" style="width: 60%;">-->
-
                 <div class="two_tables">
                     <div>
                         <table>

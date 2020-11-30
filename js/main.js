@@ -90,7 +90,7 @@ pages.onscroll = function () {
         } else if (!result && item.visible) {
             console.log("hidden");
             item.visible = false;
-            item.gif.src = "";
+            item.gif.src = item.src.replace(".gif", ".png");
         }
     });
 }

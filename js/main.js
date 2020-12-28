@@ -84,11 +84,9 @@ pages.onscroll = function () {
     gifs_object.forEach(item => {
         let result = isVisible(item.gif);
         if (result != false && !item.visible) {
-            console.log("showed");
             item.visible = true;
             item.gif.src = item.src;
         } else if (!result && item.visible) {
-            console.log("hidden");
             item.visible = false;
             item.gif.src = item.src.replace(".gif", ".png");
         }
